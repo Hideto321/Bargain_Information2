@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_17_120555) do
+ActiveRecord::Schema.define(version: 2020_10_19_062924) do
+
+  create_table "comments", force: :cascade do |t|
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "product"
+    t.string "product_image"
+    t.integer "price"
+    t.text "product_comment"
+    t.string "product_image_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "shops", force: :cascade do |t|
     t.string "shop_name", default: "", null: false
