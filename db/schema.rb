@@ -32,13 +32,13 @@ ActiveRecord::Schema.define(version: 2020_10_19_062924) do
     t.string "shop_name", default: "", null: false
     t.integer "shop_postal_code"
     t.string "shop_address"
-    t.string "shop_email", default: "", null: false
+    t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.index ["email"], name: "index_shops_on_email", unique: true
     t.index ["reset_password_token"], name: "index_shops_on_reset_password_token", unique: true
-    t.index ["shop_email"], name: "index_shops_on_shop_email", unique: true
   end
 
 end
