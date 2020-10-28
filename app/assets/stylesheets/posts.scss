@@ -1,3 +1,68 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.myshop_post-title, .posts-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em
+}
+.myshop_post_contents, .post_contents, .showpost_contents {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45em;
+    border: 2px solid #ffffff;
+    background-color: rgba(30,30,30,0.3);
+    border-radius: 6px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.myshop_post_contents_table, .post_contents_table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 20px;
+}
+.myshop_post_contents_table tr, .post_contents_table tr {
+    width: 50%;
+}
+.myshop_post_contents_table td, .post_contents_table td {
+    width: 65%;
+    height: 7em
+}
+.showpost_contents_table td {
+    width: 100%;
+}
+.showpost_contents_table tr {
+    width: 100%;
+}
+.newpost, .editpost {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+    border: 2px solid #ffffff;
+    background-color: rgba(30,30,30,0.3);
+}
+.newpost__title, .editpost__title, .showpost__title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+}
+.newpost_contents_image, .newpost_contents_product, .newpost_contents_price, .newpost_contents_product-comment, .editpost_contents_image, .editpost_contents_product, .editpost_contents_price, .editpost_contents_product-comment {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+}
+.newpost_contents_post-button, .editpost_contents_post-button, .showpost_contents_edit-delete_button, .editpost_button_show-back {
+    margin-left: auto;
+    margin-right: auto;
+    width: 3em;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+
+

@@ -17,6 +17,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.shop_id = current_shop.id
     @post.save
     redirect_to posts_path
   end

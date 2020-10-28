@@ -1,10 +1,22 @@
-<h1>投稿一覧</h1>
+<div class="posts-title">
+    <h1>投稿一覧</h1>
+</div>
 
 <% @posts.each do |post| %>
-    <%= post.product_image %>
-    <%= post.product %>
-    <%= post.price %>
-    <%= post.product_comment %>
-    <%= link_to '詳しく見る', post_path(post) %>
-    <%= link_to "削除", post_path(post.id), method: :delete %>
+        <div class="post_contents">
+            <table class="post_contents_table">
+                <tr>
+                    <td><%= post.product %></td>
+                    <td><%= post.price %></td>
+                </tr>
+                <tr>
+                    <td><%= post.product_comment %></td>
+                    <td><%= image_tag attachment_url(post, :product_image, :fill, 300, 300, format: "jpg") %></td>
+                </tr>
+                <tr>
+                    <td><%= link_to '詳しく見る', post_path(post) %></td>
+                    <td><%= link_to "削除", post_path(post.id), method: :delete %></td>
+                </tr>
+            </table>
+        </div>
 <% end %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_19_062924) do
+ActiveRecord::Schema.define(version: 2020_10_20_113731) do
 
   create_table "comments", force: :cascade do |t|
     t.text "comment"
@@ -26,19 +26,20 @@ ActiveRecord::Schema.define(version: 2020_10_19_062924) do
     t.string "product_image_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "shop_id"
   end
 
   create_table "shops", force: :cascade do |t|
     t.string "shop_name", default: "", null: false
     t.integer "shop_postal_code"
     t.string "shop_address"
-    t.string "shop_email", default: "", null: false
+    t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.index ["email"], name: "index_shops_on_email", unique: true
     t.index ["reset_password_token"], name: "index_shops_on_reset_password_token", unique: true
-    t.index ["shop_email"], name: "index_shops_on_shop_email", unique: true
   end
 
 end

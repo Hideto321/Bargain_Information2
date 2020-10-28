@@ -1,8 +1,20 @@
-<h1>投稿詳細</h1>
+<h1 class="showpost__title">投稿詳細</h1>
 
 
-    <%= @post.product_image %>
-    <%= @post.product %>
-    <%= @post.price %>
-    <%= @post.product_comment %>
-    <%= link_to "削除", post_path(@post.id), method: :delete %>
+<div class="showpost_contents">
+    <table width="100%" style="font-size: 17pt">
+        <tr>
+            <td rowspan="3"><%= image_tag attachment_url(@post, :product_image, :fill, 300, 300, format: "jpg") %></td><td align="center"><%= @post.product %></td>
+        </tr>
+        <tr>
+            <td align="center"><%= @post.price %></td>
+        </tr>
+        <tr>
+            <td align="center"><%= @post.product_comment %></td>
+        </tr>
+    </table>
+    <div class="showpost_contents_edit-delete_button">
+        <%= link_to "編集", edit_post_path(@post.id) %>
+        <%= link_to "削除", post_path(@post.id), method: :delete %>
+    </div>
+</div>

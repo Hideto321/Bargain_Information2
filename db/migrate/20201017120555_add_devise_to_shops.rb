@@ -7,7 +7,7 @@ class AddDeviseToShops < ActiveRecord::Migration[5.2]
       t.string :shop_name, default: "", null: false
       t.integer :shop_postal_code
       t.string :shop_address
-      t.string :shop_email,              null: false, default: ""
+      t.string :email,   null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable
@@ -40,7 +40,7 @@ class AddDeviseToShops < ActiveRecord::Migration[5.2]
       # t.timestamps null: false
     end
 
-    add_index :shops, :shop_email,                unique: true
+    add_index :shops, :email,                unique: true
     add_index :shops, :reset_password_token, unique: true
     # add_index :shops, :confirmation_token,   unique: true
     # add_index :shops, :unlock_token,         unique: true

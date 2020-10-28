@@ -62,7 +62,10 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'ransack'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'jquery-rails'
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem 'dotenv-rails'
+gem 'pry-rails'
+
