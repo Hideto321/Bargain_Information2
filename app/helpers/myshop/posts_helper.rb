@@ -1,0 +1,2 @@
+module Myshop::PostsHelper
+end

@@ -1,0 +1,22 @@
+
+<div class="myshop_post-title">
+    <h2>店舗投稿一覧</h2>
+</div>
+    <% @posts.each do |post| %>
+        <div class="myshop_post_contents">
+            <table class="myshop_post_contents_table">
+                <tr>
+                    <td width="300"><%= post.product %></td>
+                    <td width="300"><%= post.price %></td>
+                </tr>
+                <tr>
+                    <td><%= post.product_comment %></td>
+                    <td><%= image_tag attachment_url(post, :product_image, :fill, 300, 300, format: "jpg") %></td>
+                </tr>
+                <tr>
+                    <td><%= link_to '詳しく見る', post_path(post) %></td>
+                    <td><%= link_to "削除", post_path(post.id), method: :delete %></td>
+                </tr>
+            </table>
+        </div>
+    <% end %>

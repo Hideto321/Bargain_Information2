@@ -1,0 +1,22 @@
+<div class="shop_title">
+    <h1>店舗一覧</h1>
+</div>
+
+<% @shops.each do |shop| %>
+<div class="shop_contents">
+    <table class="shop_contents_table" >
+        <tr>
+            <td><%= shop.shop_name %></td>
+            <td><%= shop.shop_postal_code %></td>
+        </tr>
+        <tr>
+            <td><%= shop.shop_address %></td>
+            <td><%= shop.email %></td>
+        </tr>
+        <tr class="shop_contents_show-delete_button">
+            <td><%= link_to '詳しく見る', shop_path(shop) %></td>
+            <td><%= link_to "削除", shop_path(shop.id), method: :delete %></td>
+        </tr>
+    </table>
+</div>
+<% end %>

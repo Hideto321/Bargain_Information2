@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BargainInformation</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application' %>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+  <nav class="header navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+      
+        <%= link_to image_tag("logo.png", :width => '70', :height => '70', alt: "ロゴ"), root_path %>
+      
+		</div>
+		
+    <div class="navbar-content navbar-right">
+      <div class="collapse navbar-collapse" id="navbarEexample1">
+        <ul class="nav navbar-nav">
+        <% if shop_signed_in? %>
+          <li>
+            <%= link_to(new_post_path) do %>
+            <button type="button" class="header-contents__botton__newpost">新規投稿</button>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to(myshop_posts_path) do %>
+            <button type="button" class="header-contents__botton__myshop-posts">投稿一覧</button>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to(shops_path) do %>
+            <button type="button" class="header-contents__botton__shops">店舗一覧</button>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to(destroy_shop_session_path, method: :delete) do %>
+            <button type="button" class="header-contents__botton__logout">ログアウト</button>
+            <% end %>
+          </li>
+          <% else %>
+          <li>
+            <%= link_to(home_about_path) do %>
+            <button type="button" class="header-contents__botton__about">About</button>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to(posts_path) do %>
+            <button type="button" class="header-contents__botton__myshop-posts">投稿一覧</button>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to(shops_path) do %>
+            <button type="button" class="header-contents__botton__shops">店舗一覧</button>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to(shop_session_path) do %>
+            <button type="button" class="header-contents__botton__logout">店舗ログイン</button>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to(new_shop_registration_path) do %>
+            <button type="button" class="header-contents__botton__logout">店舗新規登録</button>
+            <% end %>
+          </li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+	</div>
+  </nav>
+  </header>
+  <div class="wrapper">
+    <%= yield %>
+  </div>
+  <footer>
+    <div class="copyright">©2020 Bargain Information</div>
+  </footer>
+</body>
+
+</html>

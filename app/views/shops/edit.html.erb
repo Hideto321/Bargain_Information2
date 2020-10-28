@@ -1,0 +1,33 @@
+<div class="editshop_title">
+    <h1>店舗情報編集</h1>
+</div>
+
+<%= form_for(@shop) do |f| %>
+<div class="editshop">
+    <div class="editshop_contents_shop-name">
+        <h4>店舗名</h4>
+        <%= f.text_field :shop_name %>
+    </div>
+    <div class="editshop_contents_shop-postal-code">
+        <h4>郵便番号</h4>
+        <%= f.text_field :shop_postal_code %>
+    </div>
+    <div class="editshop_contents_shop-address">
+        <h4>店舗住所</h4>
+        <%= f.text_area :shop_address %>
+    </div>
+    <div class="editshop_contents_shop-email">
+        <h4>メールアドレス</h4>
+        <%= f.text_field :email %>
+    </div>
+    <div class="editshop_contents_save-button">
+        <%= f.submit '保存' %>
+    </div>
+
+    <div class="editshop_contents_show-back-button">
+        <%= link_to "Show", shop_path(@shop) %>
+        <%= link_to "Back", shops_path %>
+    </div>
+
+<% end %>
+</div>
