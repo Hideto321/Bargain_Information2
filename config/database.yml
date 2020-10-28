@@ -20,7 +20,7 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-  production:
+production:
   <<: *default
   database: <%= ENV['DB_DATABASE'] %>
   adapter: mysql2
@@ -30,3 +30,5 @@ test:
   host: <%= ENV['DB_HOST'] %>
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
+
+  
