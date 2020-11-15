@@ -9,9 +9,9 @@
 
 Shop.create!([
 	{
-        shop_name: 'inageya',
+        shop_name: 'いなげや　川越駅前支店',
         shop_postal_code: '3501111',
-        shop_address: 'saitamakenn',
+        shop_address: '埼玉県川越市新宿町1-1-1',
         email: 'kawagoe@aaa.com',
         password: '111111',
     },
