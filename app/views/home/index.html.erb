@@ -1,8 +1,56 @@
+<input type="hidden" id="shopData" value="<%= @shop %>" />
 <h1 class="home_title">マップから近くのお店を検索</h1>
 <div id='map'></div>
+<div>
+    
+</div>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlqKn88pQQQXhG-gdZOLnc7y4BLlA5uCo&callback=initMap"></script>
+
 <script>
+
+// shopdata = document(全体)から('shopdata')のIDがついてるvalueを入れ込んでる
+const shopData = document.getElementById('shopData').value;
+
+const latLngTest = [];
+
+function codeAddress(searchAddress) {
+    const geocoder = new google.maps.Geocoder;
+    if (geocoder) {
+        geocoder.geocode( 
+            {'address': searchAddress,'region': 'jp'},
+            function(results, status) {
+                console.log(results);
+                if (status == google.maps.GeocoderStatus.OK) {
+                    map.setCenter(results[0].geometry.location);
+
+                    let bounds = new google.maps.LatLngBounds();
+                    for (let r in results) {
+                        if (results[r].geometry) {
+                            let latlng = results[r].geometry.location;
+                                bounds.extend(latlng);
+                                new google.maps.Marker({
+                                position: latlng,map: map
+                            });
+                            latLngTest.push(latlng.lat());
+                            latLngTest.push(latlng.lng());
+                        }
+                    }
+                } else {
+                    alert("Geocode 取得に失敗しました reason: "
+                        + status);
+                    }
+            }
+        );
+    }
+}
+
+codeAddress('南大塚駅');
+
+// rails だとアクティブレコードで帰ってくる、＝ railsのデータの形式　それをrails のコントローラーでto_jsonでjsonに変えて
+// コントローラーでjsonに変えてるはずがhtmlのinputタグで受け取ってるから、stringに変わる
+// そのため、js側でjson.perseで改めてjsonn形式に変えてる
+console.log(JSON.parse(shopData));
 const MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
 const Options = {
     zoom: 15,
@@ -20,9 +68,9 @@ let markerPosition = new google.maps.LatLng(35.680127400345235, 139.771201934024
 // info　ピンが押された時に出てくるhtmlの中身
 const contentString =
     '<div style="color:#333333;">' +
-    '<h1>ヤオコー</h1>' +
+    '<h1>shopData</h1>' +
     '<div>' +
-    "<p>いまはとってもバナナが安いよ</p>" +
+    "<p>" + shopData + "</p>" +
     "<p><b>電話番号</b> : 09012345678</p>" +
     "<p><b>営業時間</b> : 08:00~20:00</p>" +
     "</div>" +
@@ -40,7 +88,7 @@ const marker = new google.maps.Marker({
     animation: google.maps.Animation.DROP,
     // Google マップの持ってるアニメーション
     icon: {
-        url: 'https://www.flaticon.com/svg/static/icons/svg/415/415733.svg',
+        url: 'http://maps.google.co.jp/mapfiles/ms/icons/convienancestore.png',
         scaledSize: new google.maps.Size(40, 40)
     },
     optimized: false

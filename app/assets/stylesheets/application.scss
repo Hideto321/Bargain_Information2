@@ -24,9 +24,34 @@
   margin-right: auto;
   width: 14em;
 }
+.about-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 7em;
+  margin-bottom: 50px;
+}
+.about-contents_title1, .about-contents_title2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+  font-weight   : bold;
+  border-bottom : 2px solid #ff9494;
+  font-style    : oblique;
+  color         : #ffffff;
+  background    : linear-gradient(transparent 30%,  #ff9494c4 65%);
+}
+.about-contents_picture {
+  text-align: center
+}
+.about-contents_picture div {
+  margin-top: 2%;
+  display:inline-block;
+  border: 3px solid #84f503;
+}
 body {
   // background-image: url('/images/background_image.jpg');
   background-image: image-url('background_image.jpg'); 
+  background-attachment: fixed;
   background-size:cover;
   width: 100%;
   min-height: 100vh;
@@ -53,8 +78,8 @@ body {
 }
 .header-contents__botton__newpost:hover, .header-contents__botton__myshop-posts:hover, .header-contents__botton__shops:hover, .header-contents__botton__about:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
-  color         : #1a1aff;     /* 背景色     */
-  background    : #ffff1a;     /* 文字色     */
+  color         : #d3ffaf;     /* 背景色     */
+  background    : #000000;     /* 文字色     */
 }
 
 .header-contents__botton__logout {
@@ -92,6 +117,7 @@ body {
   width: 30em;
   height: 35em;
   border: 2px solid #ffffff;
+  color: #ffffff;
   background-color: rgba(30,30,30,0.3);
 }
 .new-registration_form, .new-session_form {
@@ -99,6 +125,7 @@ body {
   margin-right: auto;
   width: 13em;
   font-size: 17px;
+  color: #ffffff;
 }
 .registration_submit-button, .session_submit-button {
   margin-left: auto;
@@ -114,6 +141,9 @@ body {
 }
 .field {
   margin: 5px;
+}
+.inText {
+  color: #000000;
 }
 
 * {
@@ -190,6 +220,7 @@ footer {
   background-color: #d3ffaf5b;
   height: 15em;
   width: 100%;
+  margin-top: 30px;
 }
 .copyright {
   color: #ffffff;
