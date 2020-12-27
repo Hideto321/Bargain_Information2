@@ -30910,13 +30910,23 @@ Processing by HomeController#about as HTML
 Completed 200 OK in 204ms (Views: 197.1ms | ActiveRecord: 0.0ms)
 
 
-Completed 200 OK in 375ms (Views: 355.8ms | ActiveRecord: 1.2ms)
-
-
-e", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
-
-0m
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       5.1ms | ActiveRecord: 5.3ms)
+Started GET "/" for 10.0.2.2 at 2020-12-20 11:43:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Started GET "/" for 10.0.2.2 at 2020-12-20 11:43:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (5.3ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5400ms (Views: 5375.1ms | ActiveRecord: 5.3ms)
 
 
 Completed 200 OK in 7302ms (Views: 7216.1ms | ActiveRecord: 7.6ms)
@@ -31630,5 +31640,1069 @@ Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
   Rendered home/index.html.erb within layouts/application (0.9ms)
 Completed 200 OK in 375ms (Views: 355.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:12:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.2ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 3654ms (Views: 3572.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:15:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (4.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 412ms (Views: 386.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:17:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.1ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 720ms (Views: 700.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:18:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (3.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 367ms (Views: 353.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:21:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 382ms (Views: 351.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:21:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 774ms (Views: 575.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:22:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (4.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 335ms (Views: 307.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:24:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 622ms (Views: 604.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:25:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 703ms (Views: 687.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:25:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 353ms (Views: 342.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:26:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (6.4ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 311ms (Views: 270.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:31:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 506ms (Views: 484.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:32:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (3.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 615ms (Views: 578.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:45:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (3.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 587ms (Views: 520.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:46:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (3.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 368ms (Views: 351.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:47:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 591ms (Views: 575.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:47:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (2.9ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 381ms (Views: 363.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:48:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.2ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 501ms (Views: 465.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:49:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (5.4ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 303ms (Views: 284.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:49:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (2.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 276ms (Views: 262.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:50:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 392ms (Views: 379.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:51:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (4.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 280ms (Views: 260.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:51:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (2.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 326ms (Views: 304.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:51:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 778ms (Views: 765.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:52:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 338ms (Views: 328.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:52:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 300ms (Views: 283.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:53:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 293ms (Views: 277.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:54:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 510ms (Views: 500.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:54:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (2.2ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 318ms (Views: 306.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:55:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 306ms (Views: 288.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:55:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 309ms (Views: 289.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:56:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.2ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 255ms (Views: 242.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:56:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 501ms (Views: 485.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:57:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 355ms (Views: 343.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:57:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.3ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 335ms (Views: 320.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:59:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 340ms (Views: 328.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:59:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 557ms (Views: 537.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 08:59:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 370ms (Views: 359.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:03:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.4ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 346ms (Views: 328.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:04:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 352ms (Views: 330.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:06:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 252ms (Views: 235.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:06:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 371ms (Views: 354.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:06:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (3.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 269ms (Views: 250.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:07:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 696ms (Views: 539.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:07:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 484ms (Views: 455.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:10:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (2.2ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 460ms (Views: 432.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:11:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 331ms (Views: 320.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:12:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 301ms (Views: 288.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:13:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 608ms (Views: 598.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:23:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (3.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 587ms (Views: 573.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:24:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 436ms (Views: 423.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:24:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (3.3ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 319ms (Views: 304.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:25:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.1ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 698ms (Views: 686.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:25:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.1ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 710ms (Views: 681.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:26:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 775ms (Views: 715.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:28:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.1ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 825ms (Views: 789.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:30:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (4.3ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 365ms (Views: 347.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:31:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 775ms (Views: 748.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:31:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 623ms (Views: 597.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:31:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 462ms (Views: 450.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:32:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 869ms (Views: 842.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:32:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (2.2ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 495ms (Views: 463.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:33:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 512ms (Views: 493.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:33:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 318ms (Views: 301.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:34:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 1100ms (Views: 993.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:34:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (7.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 362ms (Views: 339.7ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:34:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.3ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 320ms (Views: 305.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:36:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 677ms (Views: 660.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:36:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 299ms (Views: 282.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:37:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.1ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 294ms (Views: 280.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:37:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.3ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 443ms (Views: 415.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:38:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (3.9ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 383ms (Views: 351.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:40:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (2.9ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 298ms (Views: 281.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:40:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 570ms (Views: 552.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:42:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 384ms (Views: 368.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:42:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 319ms (Views: 305.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:43:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 280ms (Views: 265.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:44:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 311ms (Views: 294.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:45:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 399ms (Views: 384.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:46:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.4ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 347ms (Views: 334.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:47:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.4ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 629ms (Views: 602.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:48:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.9ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 882ms (Views: 848.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:49:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 480ms (Views: 464.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 09:49:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (2.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 285ms (Views: 262.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:18:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (6.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 440ms (Views: 424.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:32:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (31.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 545ms (Views: 470.1ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:32:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 567ms (Views: 548.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:32:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (8.1ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 523ms (Views: 491.3ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:32:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 421ms (Views: 406.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:37:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.1ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 995ms (Views: 955.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:44:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (4.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 447ms (Views: 412.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:48:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 679ms (Views: 663.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:49:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 474ms (Views: 460.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:49:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 419ms (Views: 359.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:51:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (3.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 490ms (Views: 475.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:52:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 363ms (Views: 345.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:52:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 620ms (Views: 606.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:53:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.9ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 632ms (Views: 591.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:53:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 500ms (Views: 486.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:54:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 593ms (Views: 580.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:54:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 506ms (Views: 489.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:56:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 552ms (Views: 539.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/www.google.com" for 10.0.2.2 at 2020-12-27 11:57:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/www.google.com"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2020-12-27 11:58:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops"."shop_name", "shops"."shop_postal_code", "shops"."shop_address" FROM "shops"[0m
+  ↳ app/controllers/home_controller.rb:3
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 310ms (Views: 294.7ms | ActiveRecord: 0.5ms)
 
 

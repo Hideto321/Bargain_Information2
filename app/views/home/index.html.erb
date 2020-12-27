@@ -1,105 +1,116 @@
 <input type="hidden" id="shopData" value="<%= @shop %>" />
 <h1 class="home_title">マップから近くのお店を検索</h1>
+<!-- マップを表示する領域-->
 <div id='map'></div>
-<div>
-    
-</div>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlqKn88pQQQXhG-gdZOLnc7y4BLlA5uCo&callback=initMap"></script>
+<!-- Google マップのAPIを読み込んでる　「&callback=initMap」これを書かないとGoogle マップの機能が使えない → new googleとかその辺のやつ-->
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlqKn88pQQQXhG-gdZOLnc7y4BLlA5uCo&callback=initMap"></script>
 
 <script>
-
-// shopdata = document(全体)から('shopdata')のIDがついてるvalueを入れ込んでる
+// from rails
+//railsから渡されたデータをJSで扱えるように変換　→　変換されたデータがjson shopdataに入ってる
 const shopData = document.getElementById('shopData').value;
-
-// rails だとアクティブレコードで帰ってくる、＝ railsのデータの形式　それをrails のコントローラーでto_jsonでjsonに変えて
-// コントローラーでjsonに変えてるはずがhtmlのinputタグで受け取ってるから、stringに変わる
-// そのため、js側でjson.perseで改めてjson形式に変えてる
 const jsonShopData = JSON.parse(shopData);
+let shopContent = [];
+let shopLat;
+let shopLng;
 
-const convertLatLng = [];
-// let marker;
+console.log(jsonShopData);
 
-let infowindow;
-let contentString;
 jsonShopData.forEach(element => {
-    codeAddress(element.shop_address);
-
-    // info　ピンが押された時に出てくるhtmlの中身
-    contentString =
-        '<div style="color:#333333;">' +
-        '<h1>shopData</h1>' +
-        '<div>' +
-        "<p>" + element.shop_name + "</p>" +
-        "<p><b>電話番号</b> : 09012345678</p>" +
-        "<p><b>営業時間</b> : 08:00~20:00</p>" +
-        "</div>" +
-        "</div>";
-
-    // 左の変数に吹き出しを出すための設定
-    infowindow = new google.maps.InfoWindow({
-        content: contentString,
+    // localStorageの中から店舗の住所を検索して,適合するものをshopLatに入れている.
+    if(localStorage.getItem('lat : ' + element.shop_address)) {
+        shopLat = localStorage.getItem('lat : ' + element.shop_address);
+    } else {
+         // localStorage内に当てはまる住所がなかったら0を当てはめる
+        shopLat = 0;
+    }
+    if(localStorage.getItem('lng : ' + element.shop_address)) {
+        shopLng = localStorage.getItem('lng : ' + element.shop_address);
+    } else {
+        // cannot get lng
+        shopLng = 0;
+    }
+    //　shopcontentはお店のdataが入っていて,shop(吹き出しの中のhtml),緯度と軽度の三つが入っている
+    shopContent.push({
+        shop: 
+        '<div style="color:#333333; text-align:center;">' +
+        '<h3 style="border-bottom: dotted 2px #333;">' + element.shop_name + '</h3>' +
+        '<div style="margin:20px;">' +
+        '<p><b>電話番号</b> : 09012345678</p>' +
+        '<p><b>営業時間</b> : 08:00~20:00</p>' +
+        '<a href="https//www.google.com">店舗pageへ飛ぶ</a>' + 
+        '</div>' +
+        '</div>',
+        lat: parseFloat(shopLat),
+        lng: parseFloat(shopLng)
     });
+    //　parseFloatはlocalStorageから持ってきた出たは文字列型で入っているので実数に変換
 });
 
-function codeAddress(searchAddress) {
+function initMap() {
     const geocoder = new google.maps.Geocoder;
-    if (geocoder) {
-        geocoder.geocode( 
-            {'address': searchAddress,'region': 'jp'},
-            function(results, status) {
-                if (status == google.maps.GeocoderStatus.OK) {
-                    map.setCenter(results[0].geometry.location);
+    //　マップの初期設定.　中心やzoomを設定している
+    const defaultSettings = {
+        zoom: 15,
+        center:
+        {
+            lat: 35.6811673, 
+            lng: 139.7670516
+        }
+    };
+    const map = new google.maps.Map(
+        // mapっていうidがついたdivに対して,マップを適用させている
+        document.querySelector('#map'),
+        defaultSettings
+    );
 
-                    let bounds = new google.maps.LatLngBounds();
-                    for (let r in results) {
-                        if (results[r].geometry) {
-                            let latlng = results[r].geometry.location;
-                            bounds.extend(latlng);
-                            marker = new google.maps.Marker({
-                                position: latlng,
-                                map,
-                                animation: google.maps.Animation.DROP,
-                                icon: {
-                                    url: 'http://maps.google.co.jp/mapfiles/ms/icons/convienancestore.png',
-                                    scaledSize: new google.maps.Size(40, 40)
-                                },
-                            });
-                            marker.addListener('click', () => {
-                                infowindow.open(map, marker);
-                            });
-                            // addlistenetでイベントを監視してる、今回はクリックされたら、下の記述のinfowindowがopwnされる（上で定義してるもの）
-                            // addListener('click', () => {
-                            //     infowindow.open(map, marker);
-                            // });
-                            convertLatLng.push(latlng.lat());
-                            convertLatLng.push(latlng.lng());
+    let currentWindow;
+
+    //　お店の情報が入っているshopContentを使って,処理を行う
+    shopContent.map(data => {
+        // マーカーをつける
+        const marker = new google.maps.Marker({
+            position: {lat: data.lat, lng: data.lng},
+            map: map
+        });
+
+        // マーカークリックしたら吹き出しを表示
+        marker.addListener('click', () => {
+            //　吹き出しでてたら閉じる.初期化処理をしている
+            currentWindow && currentWindow.close();
+            //　お店の情報を吹き出しに適用
+            const infoWindow = new google.maps.InfoWindow({content: data.shop});
+            //吹き出しを表示
+            infoWindow.open(map, marker);
+            currentWindow = infoWindow;
+        });
+    });
+
+    //住所から緯度軽度に変換
+    jsonShopData.forEach(element => {
+        if (geocoder) {
+            geocoder.geocode( 
+                {'address': element.shop_address, 'region': 'jp'},
+                function(results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        let bounds = new google.maps.LatLngBounds();
+                        for (let r in results) {
+                            if (results[r].geometry) {
+                                let latlng = results[r].geometry.location;
+                                bounds.extend(latlng);
+                                //　localStorageに緯度と軽度を一つずつ変数に入れている
+                                localStorage.setItem('lat : ' + element.shop_address, latlng.lat());
+                                localStorage.setItem('lng : ' + element.shop_address, latlng.lng());
+                            }
                         }
-                    }
-                } else {
-                    alert("Geocode 取得に失敗しました reason: "
-                        + status);
-                    }
-            }
-        );
-    }
+                    } else {
+                        alert("Geocode 取得に失敗しました reason: "
+                            + status);
+                        }
+                }
+            );
+        }
+    });
 }
-
-const MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
-const Options = {
-    zoom: 15,
-    center: MyLatLng,
-    mapTypeId: 'roadmap'
-};
-// マップの種類とズームと中心座標
-
-// map init　div id=map にマップを適用してる
-const map = new google.maps.Map(document.getElementById('map'), Options);
-
-    // pin(marker)　左側の変数にGoogle マップから（）の中の座標を入れてピンを刺すために情報を入れてる
-// let markerPosition = new google.maps.LatLng(35.680127400345235, 139.77120193402462);
-
-// address convert to latlng
-
-</script>
+</script> 
 
