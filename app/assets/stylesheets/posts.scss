@@ -5,7 +5,7 @@
 .myshop_post-title, .posts-title {
     margin-left: auto;
     margin-right: auto;
-    width: 11em
+    width: 13em
 }
 .myshop_post_contents, .post_contents, .showpost_contents {
     margin-left: auto;
@@ -62,7 +62,55 @@
     color: #000000;
     font-size: 20px;
 }
+.postDesign {
+    position: relative;
+    margin: 7em 15em;
+    padding: 0.5em 1em;
+    border: solid 3px #62c1ce;
+}
+.postDesign .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -47px;
+    left: -3px;
+    padding: 10px;
+    height: 47px;
+    line-height: 25px;
+    font-size: 30px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.postDesign p {
+    margin: 10px; 
+    padding: 0;
+}
+.postWrap {
+    text-align: center;
+}
+.postContent {
+    font-size: 150%;
+}
+.imagebox {
+    display: flex;
+    justify-content: center;
+}
+a {
+    color: #fff !important;
+    margin: 10px;
+}
+.btn-flat-border {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+}
 
-
-
-
+.btn-flat-border:hover {
+    background: #67c5ff;
+    color: white;
+}

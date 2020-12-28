@@ -1,25 +1,22 @@
 <div class="posts-title">
     <h1>投稿一覧</h1>
 </div>
-
-<% @posts.each do |post| %>
-        <div class="post_contents">
-            <table class="post_contents_table">
-                <tr>
-                    <td><%= post.shop.shop_name %></td>
-                </tr>
-                <tr>
-                    <td><%= post.product %></td>
-                    <td><%= post.price %></td>
-                </tr>
-                <tr>
-                    <td><%= post.product_comment %></td>
-                    <td><%= image_tag attachment_url(post, :product_image, :fill, 300, 300, format: "jpg") %></td>
-                </tr>
-                <tr>
-                    <td><%= link_to '詳しく見る', post_path(post) %></td>
-                    <td><%= link_to "削除", post_path(post.id), method: :delete %></td>
-                </tr>
-            </table>
+<div class="postWrap">
+    <% @posts.each do |post| %>
+        <div class="postDesign">
+            <span class="box-title">
+                <%= post.shop.shop_name %>
+            </span>
+            <div class="postContent">
+                <p><%= post.product %></p>
+                <p><%= post.price %></p>
+                <p><%= post.product_comment %></p>
+                <p><%= image_tag attachment_url(post, :product_image, :fill, 300, 300, format: "jpg") %></p>
+                <div class="imagebox">
+                    <%= link_to '詳しく見る', post_path(post), class: "btn-flat-border" %>
+                    <%= link_to "削除", post_path(post.id), method: :delete, class: "btn-flat-border" %>
+                </div>
+            </div>
         </div>
-<% end %>
+    <% end %>
+</div>
