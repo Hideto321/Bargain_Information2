@@ -34986,3 +34986,595 @@ Processing by ShopsController#index as HTML
 Completed 200 OK in 1584ms (Views: 1185.1ms | ActiveRecord: 103.5ms)
 
 
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 07:25:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (5.8ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (1.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (26.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (399.2ms)
+Completed 200 OK in 4505ms (Views: 4402.2ms | ActiveRecord: 45.5ms)
+
+
+Started GET "/attachments/0ef3fe834d5493d21f6c12ab7c8dae7b9227b1fc/store/fill/300/300/e3ff878ef6fbd4c2a0a2cf7d600181fe31156dac4a20f0d49748e8cde608/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/af8423b396a1fb2e223a46a907d783501e678f45/store/fill/300/300/91bfc48970888e58533dc2b5b1d89cbb841c911fa18baedbd8bd90d20d86/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:33 +0000
+Started GET "/attachments/172ce1f15a835e6b3e0357735a821f9e66d59c1d/store/fill/300/300/108b7529140cc3da194596f49e38a30f642b7f974c42b0805ecd696a0647/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/208c0f65b04fae041ba24cb47cc0c40e78bbf8bc/store/fill/300/300/e079c272f3c97c2641d8fdba3a5e46d5196a428a6523537f22d1b16b6ab7/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/a1fb5589f533f1bf1e8121b8b27e1672421af20e/store/fill/300/300/082d7e0daca9c2b66a99fef884d1bd47bd0e6ae7787708d14ee945fa01c1/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-01-25 07:25:34 +0000] GET "/0ef3fe834d5493d21f6c12ab7c8dae7b9227b1fc/store/fill/300/300/e3ff878ef6fbd4c2a0a2cf7d600181fe31156dac4a20f0d49748e8cde608/product_image.jpg" 200 1506.8ms
+
+Refile::App: [2021-01-25 07:25:34 +0000] GET "/208c0f65b04fae041ba24cb47cc0c40e78bbf8bc/store/fill/300/300/e079c272f3c97c2641d8fdba3a5e46d5196a428a6523537f22d1b16b6ab7/product_image.jpg" 200 1180.2ms
+
+Started GET "/attachments/00571c319f5564ca985f6423efccc5745c80f1ca/store/fill/300/300/2a22cdda5defbadc2f6df12e4aafcf4a19d9b3e30198fdebe74ad60d22b9/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/627c09074239caaa12f4813195d7fc187c046edd/store/fill/300/300/bdfeb192b098977e80ebf200cd04da7f7c074a4d46d97db42f281a46173d/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-01-25 07:25:35 +0000] GET "/172ce1f15a835e6b3e0357735a821f9e66d59c1d/store/fill/300/300/108b7529140cc3da194596f49e38a30f642b7f974c42b0805ecd696a0647/product_image.jpg" 200 1414.1ms
+
+Refile::App: [2021-01-25 07:25:35 +0000] GET "/af8423b396a1fb2e223a46a907d783501e678f45/store/fill/300/300/91bfc48970888e58533dc2b5b1d89cbb841c911fa18baedbd8bd90d20d86/product_image.jpg" 200 1453.1ms
+
+Refile::App: [2021-01-25 07:25:35 +0000] GET "/a1fb5589f533f1bf1e8121b8b27e1672421af20e/store/fill/300/300/082d7e0daca9c2b66a99fef884d1bd47bd0e6ae7787708d14ee945fa01c1/product_image.jpg" 200 1437.7ms
+
+Started GET "/attachments/93cbbadf9cba4d0bfe2791695dc804f352039cb6/store/fill/300/300/22e9ba3ec00104b3c6d1e587142cb0cd2daf1f9696de9badd7e30bb8663d/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/f9f7d1af3a021765f5066b9a2231d80ed373f4e4/store/fill/300/300/5e9f100574936bca165acc13f3e09b3db1e20b1ceffcc12263567040e171/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/856dc0b6545c76523be4c3eab72ef53c51e46cff/store/fill/300/300/2c08cef8cc70728c6139d5f57fc9b22c4fbd6008b1a9da9bface293bfa32/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-01-25 07:25:35 +0000] GET "/627c09074239caaa12f4813195d7fc187c046edd/store/fill/300/300/bdfeb192b098977e80ebf200cd04da7f7c074a4d46d97db42f281a46173d/product_image.jpg" 200 733.1ms
+
+Refile::App: [2021-01-25 07:25:35 +0000] GET "/00571c319f5564ca985f6423efccc5745c80f1ca/store/fill/300/300/2a22cdda5defbadc2f6df12e4aafcf4a19d9b3e30198fdebe74ad60d22b9/product_image.jpg" 200 770.6ms
+
+Started GET "/attachments/dd0714ff995829a3f0c551383b388175b540a492/store/fill/300/300/8a24e2d8b164fb8147b267f5a310fbca43eb3211df37132bfc4debf7f07f/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/911609605caf50423c18180fefcaca292a10e5c3/store/fill/300/300/9ac836ba8cc76163e7b0fb7d183d7119dbf9c74c7fe4e49d6f5795efaaca/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-01-25 07:25:35 +0000] GET "/f9f7d1af3a021765f5066b9a2231d80ed373f4e4/store/fill/300/300/5e9f100574936bca165acc13f3e09b3db1e20b1ceffcc12263567040e171/product_image.jpg" 200 697.5ms
+
+Started GET "/attachments/fb6bb6b302d3a52106dcdfb0bde5b1f04ae5590c/store/fill/300/300/8b269974ac505ccf6957b63acc520edaf158a81d8c2bffb134efc5a187fb/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-01-25 07:25:35 +0000] GET "/856dc0b6545c76523be4c3eab72ef53c51e46cff/store/fill/300/300/2c08cef8cc70728c6139d5f57fc9b22c4fbd6008b1a9da9bface293bfa32/product_image.jpg" 200 750.4ms
+
+Refile::App: [2021-01-25 07:25:35 +0000] GET "/93cbbadf9cba4d0bfe2791695dc804f352039cb6/store/fill/300/300/22e9ba3ec00104b3c6d1e587142cb0cd2daf1f9696de9badd7e30bb8663d/product_image.jpg" 200 739.0ms
+
+Started GET "/attachments/ba5526adf868fdeda82602868f1b8299462857bb/store/fill/300/300/23360cf9dd400861ca2ff85f8873f205188979ae90286cf6196ae2e7f8fa/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/2f3de1bf8ceb0f4772b070b4c79949b005385441/store/fill/300/300/95811c00b20f44765eaaa87b84d026aa86522e061f9b9babf6d4628a6bdb/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-01-25 07:25:37 +0000] GET "/dd0714ff995829a3f0c551383b388175b540a492/store/fill/300/300/8a24e2d8b164fb8147b267f5a310fbca43eb3211df37132bfc4debf7f07f/product_image.jpg" 200 1323.4ms
+
+Started GET "/attachments/c1247502c54151f7c3563b28e2a866a8463afda0/store/fill/300/300/b70401264be5c9785211ec4b014caaa86e4059af9f2b95ec1660a4c30f85/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-01-25 07:25:37 +0000] GET "/911609605caf50423c18180fefcaca292a10e5c3/store/fill/300/300/9ac836ba8cc76163e7b0fb7d183d7119dbf9c74c7fe4e49d6f5795efaaca/product_image.jpg" 200 1419.0ms
+
+Started GET "/attachments/27cd1169e32922eca96725286e192d0f8d76384d/store/fill/300/300/d37ee398d9dc25c59b32a1ee8c1463aa6764d3dda51c06e416b407cdfdf4/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-01-25 07:25:37 +0000] GET "/fb6bb6b302d3a52106dcdfb0bde5b1f04ae5590c/store/fill/300/300/8b269974ac505ccf6957b63acc520edaf158a81d8c2bffb134efc5a187fb/product_image.jpg" 200 1426.9ms
+
+Refile::App: [2021-01-25 07:25:37 +0000] GET "/ba5526adf868fdeda82602868f1b8299462857bb/store/fill/300/300/23360cf9dd400861ca2ff85f8873f205188979ae90286cf6196ae2e7f8fa/product_image.jpg" 200 1355.3ms
+
+Refile::App: [2021-01-25 07:25:37 +0000] GET "/2f3de1bf8ceb0f4772b070b4c79949b005385441/store/fill/300/300/95811c00b20f44765eaaa87b84d026aa86522e061f9b9babf6d4628a6bdb/product_image.jpg" 200 1389.1ms
+
+Started GET "/attachments/200415c41394fecf44c7060a0275b70efd12d6eb/store/fill/300/300/7ad83f3f4a8d94e80a09c0a1a7ba07f8133a92a9153bc3fcfff5d4900c3f/product_image.jpg" for 10.0.2.2 at 2021-01-25 07:25:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-01-25 07:25:39 +0000] GET "/c1247502c54151f7c3563b28e2a866a8463afda0/store/fill/300/300/b70401264be5c9785211ec4b014caaa86e4059af9f2b95ec1660a4c30f85/product_image.jpg" 200 2143.4ms
+
+Refile::App: [2021-01-25 07:25:39 +0000] GET "/27cd1169e32922eca96725286e192d0f8d76384d/store/fill/300/300/d37ee398d9dc25c59b32a1ee8c1463aa6764d3dda51c06e416b407cdfdf4/product_image.jpg" 200 2332.1ms
+
+Refile::App: [2021-01-25 07:25:40 +0000] GET "/200415c41394fecf44c7060a0275b70efd12d6eb/store/fill/300/300/7ad83f3f4a8d94e80a09c0a1a7ba07f8133a92a9153bc3fcfff5d4900c3f/product_image.jpg" 200 2661.3ms
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 07:42:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.3ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (5.2ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.2ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (491.3ms)
+Completed 200 OK in 7571ms (Views: 7497.5ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 07:45:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (1.2ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (175.1ms)
+Completed 200 OK in 5214ms (Views: 5200.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 07:53:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (1.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (83.4ms)
+Completed 200 OK in 3699ms (Views: 3687.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 07:55:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (3.2ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (85.6ms)
+Completed 200 OK in 3393ms (Views: 3377.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 07:59:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.2ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (73.1ms)
+Completed 200 OK in 691ms (Views: 677.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 07:59:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.2ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (111.5ms)
+Completed 200 OK in 3777ms (Views: 3766.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 08:00:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (1.2ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (111.5ms)
+Completed 200 OK in 3811ms (Views: 3722.1ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 08:00:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (11.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (3.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (102.5ms)
+Completed 200 OK in 2751ms (Views: 2706.1ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-25 08:02:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (3.9ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 446ms (Views: 426.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 08:02:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.3ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (1.2ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 255ms (Views: 233.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-25 08:05:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (16.8ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (121.7ms)
+Completed 200 OK in 4415ms (Views: 4389.9ms | ActiveRecord: 21.0ms)
+
+
