@@ -36057,3 +36057,467 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 358ms (Views: 340.0ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/shops" for 10.0.2.2 at 2021-01-25 12:17:50 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (2.5ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 783ms (Views: 771.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-26 09:49:05 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (1.1ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 4075ms (Views: 4051.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-26 09:49:57 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 3537ms (Views: 3527.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-26 09:50:54 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (1.5ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 308ms (Views: 302.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-26 09:51:07 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (1.2ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 879ms (Views: 870.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:25:09 +0000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (50.9ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `shop_email' for #<Shop:0x0000000007004770>
+Did you mean?  shop_name):
+    24: <% @shops.each do |shop| %>
+    25:     <div class="">
+    26:         <p><%= shop.shop_name %></p>
+    27:         <p><%= shop.shop_email %></p>
+    28:         <p><%= shop.shop_postal_code %></p>
+    29:         <p><%= shop.shop_address %></p>
+    30:         <div class="imagebox">
+  
+app/views/shops/index.html.erb:27:in `block in _app_views_shops_index_html_erb__1148549500004136387_58283200'
+app/views/shops/index.html.erb:24:in `_app_views_shops_index_html_erb__1148549500004136387_58283200'
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:25:29 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 1379ms (Views: 1371.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:28:28 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (1.3ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 4798ms (Views: 4792.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:31:00 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (11.3ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 3119ms (Views: 3082.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:35:27 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 3264ms (Views: 3252.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:35:52 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 3994ms (Views: 3988.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:53:04 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (5.2ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (41.4ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 5.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:     <h1>投稿一覧</h1>
+    23: </div>
+    24: <div class="postWrap">
+    25:     <% @posts.each do |post| %>
+    26:         <div class="postDesign">
+    27:             <span class="box-title">
+    28:                 <%= post.shop.shop_name %>
+  
+app/views/shops/index.html.erb:25:in `_app_views_shops_index_html_erb__1148549500004136387_69893989099480'
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:53:21 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:     <h1>投稿一覧</h1>
+    23: </div>
+    24: <div class="postWrap">
+    25:     <% @posts.each do |post| %>
+    26:         <div class="postDesign">
+    27:             <span class="box-title">
+    28:                 <%= post.shop.shop_name %>
+  
+app/views/shops/index.html.erb:25:in `_app_views_shops_index_html_erb__1148549500004136387_69894095459380'
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:53:49 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.8ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 4542ms (Views: 4533.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:56:36 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (9.7ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 9.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:     <h1>投稿一覧</h1>
+    23: </div>
+    24: <div class="postWrap">
+    25:     <% @posts.each do |post| %>
+    26:         <div class="postDesign">
+    27:             <span class="box-title">
+    28:                 <%= post.shop.shop_name %>
+  
+app/views/shops/index.html.erb:25:in `_app_views_shops_index_html_erb__1148549500004136387_69893990957140'
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:56:45 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 726ms (Views: 720.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-28 05:57:37 +0000
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (237.9ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (1.7ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (2.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (2.2ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (493.6ms)
+Completed 200 OK in 1345ms (Views: 999.6ms | ActiveRecord: 251.8ms)
+
+
+Started GET "/attachments/af8423b396a1fb2e223a46a907d783501e678f45/store/fill/300/300/91bfc48970888e58533dc2b5b1d89cbb841c911fa18baedbd8bd90d20d86/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:39 +0000
+Started GET "/attachments/208c0f65b04fae041ba24cb47cc0c40e78bbf8bc/store/fill/300/300/e079c272f3c97c2641d8fdba3a5e46d5196a428a6523537f22d1b16b6ab7/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:39 +0000
+Started GET "/attachments/172ce1f15a835e6b3e0357735a821f9e66d59c1d/store/fill/300/300/108b7529140cc3da194596f49e38a30f642b7f974c42b0805ecd696a0647/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:39 +0000
+Started GET "/attachments/0ef3fe834d5493d21f6c12ab7c8dae7b9227b1fc/store/fill/300/300/e3ff878ef6fbd4c2a0a2cf7d600181fe31156dac4a20f0d49748e8cde608/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:39 +0000
+Started GET "/attachments/a1fb5589f533f1bf1e8121b8b27e1672421af20e/store/fill/300/300/082d7e0daca9c2b66a99fef884d1bd47bd0e6ae7787708d14ee945fa01c1/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:40 +0000
+Refile::App: [2021-01-28 05:57:42 +0000] GET "/af8423b396a1fb2e223a46a907d783501e678f45/store/fill/300/300/91bfc48970888e58533dc2b5b1d89cbb841c911fa18baedbd8bd90d20d86/product_image.jpg" 200 2249.5ms
+
+Refile::App: [2021-01-28 05:57:42 +0000] GET "/208c0f65b04fae041ba24cb47cc0c40e78bbf8bc/store/fill/300/300/e079c272f3c97c2641d8fdba3a5e46d5196a428a6523537f22d1b16b6ab7/product_image.jpg" 200 2228.6ms
+
+Refile::App: [2021-01-28 05:57:42 +0000] GET "/a1fb5589f533f1bf1e8121b8b27e1672421af20e/store/fill/300/300/082d7e0daca9c2b66a99fef884d1bd47bd0e6ae7787708d14ee945fa01c1/product_image.jpg" 200 2110.3ms
+
+Started GET "/attachments/627c09074239caaa12f4813195d7fc187c046edd/store/fill/300/300/bdfeb192b098977e80ebf200cd04da7f7c074a4d46d97db42f281a46173d/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:42 +0000
+Refile::App: [2021-01-28 05:57:42 +0000] GET "/172ce1f15a835e6b3e0357735a821f9e66d59c1d/store/fill/300/300/108b7529140cc3da194596f49e38a30f642b7f974c42b0805ecd696a0647/product_image.jpg" 200 2403.8ms
+
+Started GET "/attachments/f9f7d1af3a021765f5066b9a2231d80ed373f4e4/store/fill/300/300/5e9f100574936bca165acc13f3e09b3db1e20b1ceffcc12263567040e171/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:42 +0000
+Started GET "/attachments/00571c319f5564ca985f6423efccc5745c80f1ca/store/fill/300/300/2a22cdda5defbadc2f6df12e4aafcf4a19d9b3e30198fdebe74ad60d22b9/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:42 +0000
+Started GET "/attachments/93cbbadf9cba4d0bfe2791695dc804f352039cb6/store/fill/300/300/22e9ba3ec00104b3c6d1e587142cb0cd2daf1f9696de9badd7e30bb8663d/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:42 +0000
+Refile::App: [2021-01-28 05:57:42 +0000] GET "/0ef3fe834d5493d21f6c12ab7c8dae7b9227b1fc/store/fill/300/300/e3ff878ef6fbd4c2a0a2cf7d600181fe31156dac4a20f0d49748e8cde608/product_image.jpg" 200 2320.3ms
+
+Started GET "/attachments/856dc0b6545c76523be4c3eab72ef53c51e46cff/store/fill/300/300/2c08cef8cc70728c6139d5f57fc9b22c4fbd6008b1a9da9bface293bfa32/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:42 +0000
+Refile::App: [2021-01-28 05:57:43 +0000] GET "/00571c319f5564ca985f6423efccc5745c80f1ca/store/fill/300/300/2a22cdda5defbadc2f6df12e4aafcf4a19d9b3e30198fdebe74ad60d22b9/product_image.jpg" 200 693.7ms
+
+Started GET "/attachments/dd0714ff995829a3f0c551383b388175b540a492/store/fill/300/300/8a24e2d8b164fb8147b267f5a310fbca43eb3211df37132bfc4debf7f07f/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:43 +0000
+Refile::App: [2021-01-28 05:57:43 +0000] GET "/f9f7d1af3a021765f5066b9a2231d80ed373f4e4/store/fill/300/300/5e9f100574936bca165acc13f3e09b3db1e20b1ceffcc12263567040e171/product_image.jpg" 200 803.5ms
+
+Started GET "/attachments/911609605caf50423c18180fefcaca292a10e5c3/store/fill/300/300/9ac836ba8cc76163e7b0fb7d183d7119dbf9c74c7fe4e49d6f5795efaaca/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:43 +0000
+Refile::App: [2021-01-28 05:57:43 +0000] GET "/627c09074239caaa12f4813195d7fc187c046edd/store/fill/300/300/bdfeb192b098977e80ebf200cd04da7f7c074a4d46d97db42f281a46173d/product_image.jpg" 200 1009.4ms
+
+Started GET "/attachments/fb6bb6b302d3a52106dcdfb0bde5b1f04ae5590c/store/fill/300/300/8b269974ac505ccf6957b63acc520edaf158a81d8c2bffb134efc5a187fb/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:43 +0000
+Refile::App: [2021-01-28 05:57:43 +0000] GET "/93cbbadf9cba4d0bfe2791695dc804f352039cb6/store/fill/300/300/22e9ba3ec00104b3c6d1e587142cb0cd2daf1f9696de9badd7e30bb8663d/product_image.jpg" 200 938.8ms
+
+Started GET "/attachments/ba5526adf868fdeda82602868f1b8299462857bb/store/fill/300/300/23360cf9dd400861ca2ff85f8873f205188979ae90286cf6196ae2e7f8fa/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:43 +0000
+Refile::App: [2021-01-28 05:57:43 +0000] GET "/856dc0b6545c76523be4c3eab72ef53c51e46cff/store/fill/300/300/2c08cef8cc70728c6139d5f57fc9b22c4fbd6008b1a9da9bface293bfa32/product_image.jpg" 200 837.2ms
+
+Started GET "/attachments/2f3de1bf8ceb0f4772b070b4c79949b005385441/store/fill/300/300/95811c00b20f44765eaaa87b84d026aa86522e061f9b9babf6d4628a6bdb/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:43 +0000
+Refile::App: [2021-01-28 05:57:44 +0000] GET "/dd0714ff995829a3f0c551383b388175b540a492/store/fill/300/300/8a24e2d8b164fb8147b267f5a310fbca43eb3211df37132bfc4debf7f07f/product_image.jpg" 200 541.7ms
+
+Started GET "/attachments/c1247502c54151f7c3563b28e2a866a8463afda0/store/fill/300/300/b70401264be5c9785211ec4b014caaa86e4059af9f2b95ec1660a4c30f85/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:44 +0000
+Refile::App: [2021-01-28 05:57:44 +0000] GET "/ba5526adf868fdeda82602868f1b8299462857bb/store/fill/300/300/23360cf9dd400861ca2ff85f8873f205188979ae90286cf6196ae2e7f8fa/product_image.jpg" 200 767.5ms
+
+Refile::App: [2021-01-28 05:57:44 +0000] GET "/911609605caf50423c18180fefcaca292a10e5c3/store/fill/300/300/9ac836ba8cc76163e7b0fb7d183d7119dbf9c74c7fe4e49d6f5795efaaca/product_image.jpg" 200 905.7ms
+
+Refile::App: [2021-01-28 05:57:44 +0000] GET "/fb6bb6b302d3a52106dcdfb0bde5b1f04ae5590c/store/fill/300/300/8b269974ac505ccf6957b63acc520edaf158a81d8c2bffb134efc5a187fb/product_image.jpg" 200 877.4ms
+
+Started GET "/attachments/27cd1169e32922eca96725286e192d0f8d76384d/store/fill/300/300/d37ee398d9dc25c59b32a1ee8c1463aa6764d3dda51c06e416b407cdfdf4/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:44 +0000
+Refile::App: [2021-01-28 05:57:44 +0000] GET "/2f3de1bf8ceb0f4772b070b4c79949b005385441/store/fill/300/300/95811c00b20f44765eaaa87b84d026aa86522e061f9b9babf6d4628a6bdb/product_image.jpg" 200 943.1ms
+
+Started GET "/attachments/200415c41394fecf44c7060a0275b70efd12d6eb/store/fill/300/300/7ad83f3f4a8d94e80a09c0a1a7ba07f8133a92a9153bc3fcfff5d4900c3f/product_image.jpg" for 10.0.2.2 at 2021-01-28 05:57:44 +0000
+Refile::App: [2021-01-28 05:57:44 +0000] GET "/c1247502c54151f7c3563b28e2a866a8463afda0/store/fill/300/300/b70401264be5c9785211ec4b014caaa86e4059af9f2b95ec1660a4c30f85/product_image.jpg" 200 598.3ms
+
+Refile::App: [2021-01-28 05:57:44 +0000] GET "/200415c41394fecf44c7060a0275b70efd12d6eb/store/fill/300/300/7ad83f3f4a8d94e80a09c0a1a7ba07f8133a92a9153bc3fcfff5d4900c3f/product_image.jpg" 200 294.4ms
+
+Refile::App: [2021-01-28 05:57:45 +0000] GET "/27cd1169e32922eca96725286e192d0f8d76384d/store/fill/300/300/d37ee398d9dc25c59b32a1ee8c1463aa6764d3dda51c06e416b407cdfdf4/product_image.jpg" 200 453.9ms
+
+Started GET "/posts" for 10.0.2.2 at 2021-01-28 05:57:45 +0000
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (6.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mCACHE Shop Load (0.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (82.7ms)
+Completed 200 OK in 409ms (Views: 384.2ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 05:57:46 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (1.1ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 264ms (Views: 247.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 06:01:32 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    24:     <h1>投稿一覧</h1>
+    25: </div>
+    26: <div class="postWrap">
+    27:     <% @posts.each do |post| %>
+    28:         <div class="postDesign">
+    29:             <span class="box-title">
+    30:                 <%= post.shop.shop_name %>
+  
+app/views/shops/index.html.erb:27:in `_app_views_shops_index_html_erb__1148549500004136387_69893992155820'
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 06:01:43 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.7ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 953ms (Views: 943.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 06:03:12 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 3311ms (Views: 3303.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 06:04:47 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (12.3ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    24:     <h1>投稿一覧</h1>
+    25: </div>
+    26: <div class="postWrap">
+    27:     <% @posts.each do |post| %>
+    28:         <div class="postDesign">
+    29:             <span class="box-title">
+    30:                 <%= post.shop.shop_name %>
+  
+app/views/shops/index.html.erb:27:in `_app_views_shops_index_html_erb__1148549500004136387_69894093593480'
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 06:04:56 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 3342ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...s: 5px 5px 0 0;": expected selector or at-rule, was "}"):
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8: 
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:   <%= javascript_include_tag 'application' %>
+    11:   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&display=swap" rel="stylesheet">
+    12: </head>
+  
+app/assets/stylesheets/shops.scss:81
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__2594681997912550583_69894063121320'
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 06:05:13 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 3157ms (Views: 3145.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 06:17:46 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (2.2ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 5462ms (Views: 5422.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 06:19:26 +0000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (28.0ms)
+Started GET "/shops" for 10.0.2.2 at 2021-01-28 06:19:29 +0000
+Processing by ShopsController#index as HTML
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/views/shops/index.html.erb:5
+  Rendered shops/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 8801ms (Views: 8780.9ms | ActiveRecord: 3.3ms)
+
+
+Completed 200 OK in 5570ms (Views: 5564.1ms | ActiveRecord: 0.9ms)
+
+
