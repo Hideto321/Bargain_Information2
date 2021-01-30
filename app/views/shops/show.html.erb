@@ -3,7 +3,7 @@
     <h1>店舗情報詳細</h1>
 </div>
 
-    <div class="showshop" style="font-size:13pt">
+    <!--<div class="showshop" style="font-size:13pt">
         <div class="showshop_contents_shop-name">
             <%= @shop.shop_name %>
         </div>
@@ -20,4 +20,21 @@
             <%= link_to '編集', edit_shop_path %>
             <%= link_to '戻る', shops_path %>
         </div>
+    </div>-->
+
+<div class="shopWrap">
+    <div class="shopDesign">
+        <div class="shopContent">
+            <p><%= @shop.shop_name %></p>
+            <p><%= @shop.shop_postal_code %></p>
+            <p><%= @shop.shop_address %></p>
+            <p><%= @shop.email %></p>
+            <% if shop_signed_in? %>
+                <div class="imagebox">
+                    <%= link_to '編集', edit_shop_path, class: "btn-flat-border" %>
+                    <%= link_to '戻る', shops_path, class: "btn-flat-border" %>
+                </div>
+            <% end %>
+        </div>
     </div>
+</div>

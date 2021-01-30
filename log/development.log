@@ -36521,3 +36521,75 @@ Completed 200 OK in 8801ms (Views: 8780.9ms | ActiveRecord: 3.3ms)
 Completed 200 OK in 5570ms (Views: 5564.1ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/shops/1" for 10.0.2.2 at 2021-01-28 06:21:47 +0000
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:7
+  Rendering shops/show.html.erb within layouts/application
+  Rendered shops/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 331ms (Views: 281.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/shops/1" for 10.0.2.2 at 2021-01-30 10:21:23 +0000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (1.1ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:7
+  Rendering shops/show.html.erb within layouts/application
+  Rendered shops/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2120ms (Views: 2051.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/shops/1" for 10.0.2.2 at 2021-01-30 10:22:30 +0000
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.9ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:7
+  Rendering shops/show.html.erb within layouts/application
+  Rendered shops/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 268ms (Views: 256.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/shops/1" for 10.0.2.2 at 2021-01-30 10:30:07 +0000
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (2.9ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:7
+  Rendering shops/show.html.erb within layouts/application
+  Rendered shops/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 244ms (Views: 222.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/shops/1" for 10.0.2.2 at 2021-01-30 10:32:37 +0000
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:7
+  Rendering shops/show.html.erb within layouts/application
+  Rendered shops/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 356ms (Views: 346.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/shops/1/edit" for 10.0.2.2 at 2021-01-30 10:34:31 +0000
+Processing by ShopsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (1.0ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:11
+  Rendering shops/edit.html.erb within layouts/application
+  Rendered shops/edit.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 292ms (Views: 275.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/shops/1" for 10.0.2.2 at 2021-01-30 10:36:50 +0000
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (1.6ms)[0m  [1m[34mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:7
+  Rendering shops/show.html.erb within layouts/application
+  Rendered shops/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 230ms (Views: 213.6ms | ActiveRecord: 1.6ms)
+
+
